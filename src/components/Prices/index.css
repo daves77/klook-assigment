@@ -1,0 +1,17 @@
+
+
+.food-price-wrapper {
+  display: flex;
+  align-items:center
+}
+
+.food-price {
+  font-size: 28px;
+}
+
+.discounted-food-price {
+  color: #F8593B;
+  text-decoration: line-through;
+  margin-left: 0.7rem;
+  font-size: 20px
+}
