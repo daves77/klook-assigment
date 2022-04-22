@@ -40,7 +40,6 @@ export default function useLoadFood(showing: number) {
       let start = currentIndex
 			while (start < showing) {
         const requests: any[] = [] //not too sure how to type axios requests here
-        // const remainder = (showing - start) % 3 === 0 ? 3 : (showing-start)%3
         const remainder = (start + 3) > showing ? showing - start: 3 
         for (let i = 1; i <= remainder ; i++){
           requests.push(createRequest(start + i))
