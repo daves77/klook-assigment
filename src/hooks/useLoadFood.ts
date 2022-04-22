@@ -29,7 +29,7 @@ export default function useLoadFood(showing: number) {
 	const [error, setError] = useState<boolean>(false);
 	const [foods, setFoods] = useState<FoodItemDetails[]>([]);
 	const [hasMore, setHasMore] = useState<boolean>(false);
-	const [currentIndex, setCurrentIndex] = useState(1);
+	const [currentIndex, setCurrentIndex] = useState<number>(1);
 
 	useEffect(() => {
 		setLoading(true);
